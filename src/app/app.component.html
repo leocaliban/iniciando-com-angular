@@ -5,9 +5,12 @@
 
   <div class="form-group">
     <label for="nome">Nome</label>
-    <input type="text" class="form-control" id="nome" placeholder="Digite o nome" #nomeInput>
+    <input type="text" class="form-control" id="nome" placeholder="Digite o nome" (input)="alterarNome($event)"
+      value="{{nome}}">
   </div>
-  <button type="button" class="btn btn-primary" (click)="adicionar(nomeInput.value)">Cadastrar</button>
+
+  <button type="button" class="btn btn-primary" (click)="adicionar(nomeInput.value)" 
+    [disabled]="nome.length == 0">Cadastrar</button>
 </div>
 
 

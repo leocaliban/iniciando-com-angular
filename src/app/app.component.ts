@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Leonardo';
+  idade = 26;
+
+  calcularNascimento(){
+    return 2018 - this.idade;
+  }
 }
 
-/**
- * Instalando Bootstrap
- * npm install bootstrap@next --save
- */

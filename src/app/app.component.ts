@@ -8,3 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Leonardo';
 }
+
+/**
+ * Instalando Bootstrap
+ * npm install bootstrap@next --save
+ */

@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Leonardo';
+  nome = 'Leonardo';
   idade = 26;
 
-  calcularNascimento(){
-    return 2018 - this.idade;
+  adicionar(nome: string){
+    this.nome = nome;
   }
+
 }
 

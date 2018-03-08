@@ -9,6 +9,10 @@ export class FuncionarioCardComponent {
 
   @Input() funcionario: any;
 
+  isAdmin(){
+    return this.funcionario.nome.startsWith('L');
+  }
+  
   getEstilosCartao(){
     return{
       backgroundColor: this.funcionario.id % 2 === 0 ? 'lightblue' : 'lightgreen' 

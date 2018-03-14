@@ -5,8 +5,9 @@
   <div class="form-group">
     <label for="nome">Nome</label>
     <input type="text" class="form-control" id="nome" placeholder="Digite o nome" [(ngModel)]="nome"
-      (focus)="adicionado = false" (focus)="nome = ''">
+      (focus)="adicionado = false" (focus)="nome = ''"
+      appCampoColorido>
   </div>
 
-  <button type="button" class="btn btn-primary" (click)="adicionar()" 
+  <button type="button" class="btn btn-primary" (click)="adicionar()"
     [disabled]="nome.length == 0">Cadastrar</button>

@@ -12,7 +12,7 @@ export class FuncionarioFormComponent {
   adicionado = false;
   @Output() funcionarioAdicionado = new EventEmitter();
 
-  adicionar(){
+  adicionar() {
     this.adicionado = true;
 
     const funcionario = {

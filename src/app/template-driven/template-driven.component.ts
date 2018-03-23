@@ -8,6 +8,9 @@ import { NgForm } from '@angular/forms';
 })
 export class TemplateDrivenComponent {
 
+  profissoes = ['Eletricista', 'Pedreiro', 'Professor', 'Programador'];
+
+
   salvar(form: NgForm) {
     console.log(form.value.nome);
   }

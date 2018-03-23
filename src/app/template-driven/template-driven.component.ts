@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 export class TemplateDrivenComponent {
 
   salvar(form: NgForm) {
-    console.log(form);
+    console.log(form.value.nome);
   }
 
 }

@@ -7,7 +7,7 @@
 
     <input type="text" class="form-control" id="nome" placeholder="Digite o nome" [(ngModel)]="nome"
       (focus)="adicionado = false" (focus)="nome = ''"
-      appCampoColorido [cor]="'yellow'" #campo="campoColorido">
+      appCampoColorido [cor]="'red'" #campo="campoColorido">
   </div>
 
   <button type="button" class="btn btn-primary" (click)="adicionar()"

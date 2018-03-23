@@ -10,7 +10,7 @@ export class TemplateDrivenComponent {
 
   profissoes = ['Eletricista', 'Pedreiro', 'Professor', 'Programador'];
 
-
+  profissao = 'Programador';
   salvar(form: NgForm) {
     console.log(form.value.nome);
   }
